@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reserve.css">
+    <script src="../scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel ="icon" href ="../images/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Reservations</title>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <img class='background' src="../images/columbia.jpg" alt="background" loading="lazy">
+            <img class="logo" src="../images/logo.png" alt="logo" loading="lazy">
+        </div>
+    </header>
+    <main>
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html">Home</a>
+            <a href="reserve.html">Reservation</a>
+            <a href="temples.html">Temples</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services
+                <i class="fa fa-caret-down"></i>
+              </button>
+                <div class="dropdown-content">
+                    <a href="receptions.html">Wedding Receptions</a>
+                    <a href="missionaries.html">Temple Missionaries</a>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="open_nav()"><img src="../images/small_logo.png" alt="small logo" loading="lazy"> &#9776;</a>
+        </div>
+        <div class="content">
+            <form method="get" action="thanks.html" id='reservation'>
+                <fieldset>
+                    <legend>About Your Stay</legend>
+                    <label class="top">Location
+                        <select name='subject'>
+                            <option value =''>Select &#9662;</option>
+                            <option value='Palmyra'>Palmyra, NY</option>
+                            <option value='nauvoo'>Nauvoo, IL</option>
+                            <option value='alba'>Albuquerque, NM</option>
+                            <option value='colo'>Colombus, OH</option>
+                        </select>
+                    </label>
+                    <label class="top">Check-in Date<input type='date' name ='checkin' required></label>
+                    <label class="top">Check-out Date<input type='date' name ='checkout'required ></label>
+                    <label class="top">Number of Guests<input type="number" id="quantity" name="quantity" min="1" required></label>
+                    <label class="top">Room Options
+                        <select name='subject'>
+                            <option value =''>Select &#9662;</option>
+                            <option value='family'>Family Suite</option>
+                            <option value='single'>Single King Bedroom</option>
+                            <option value='double'>Double Bedroom</option>
+                            <option value='triple'>Three Bedroom</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">Full Name*<input type="text" name="name" min ="5" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Home State or Country*<input type="text" name="home" required></label>
+                </fieldset>
+                <div class="submit"><input type='submit' value="Reserve Now!" class="submitBtn"></div>
+            </form>
+            <img class='atlanta' src="../images/atlanta.jpg" alt="atlanta" loading="lazy">
+            <img class='couple' src="../images/married.jpg" alt="couple at temple" loading="lazy">
+        </div>
+    </main>
+    <hr>
+    <footer>
+        <img src="../images/small_logo.png" alt="company logo" loading="lazy">
+        <h3>Contact Us!</h3>
+        <p class="phone"><span class="material-icons">local_phone</span> 301-298-1949 </p>
+        <p class="email"><span class="material-icons">mail_outline</span> thetias@anywhere.com </p>
+        <p class="copyright">&#169; 2021 The Temple Inn and Suites</p>
+    </footer>
+</body>
+
+</html>
